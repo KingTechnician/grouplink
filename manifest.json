@@ -1,0 +1,43 @@
+{
+    "name" : "(BETA) GroupLink",
+    "description": "Ability to group links into one, that is usable and clickable",
+    "version" : "0.1.0",
+    "manifest_version": 2,
+    "content_scripts":
+    [
+        {
+            "matches":
+            [
+                "<all_urls>"
+            ],
+            "js":
+            [
+                "scripts/savedLinks.js",
+                "scripts/addLink.js",
+                "storage"
+            ]
+        }
+    ],
+    "background":
+    {
+        "scripts": ["background/background.js"]
+    },
+    "icons":
+    {
+        "96":"ownerLabel.png"
+    },
+    "browser_action":
+    {
+        "default_title":"(BETA) GroupLink"
+    },
+    "options_ui":
+    {
+        "page":"options_page/options.html",
+        "browser_style":true
+    },
+    "permissions":
+    [
+        "webNavigation",
+        "storage"
+    ]
+}
