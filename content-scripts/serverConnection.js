@@ -12,8 +12,8 @@ export function uploadToServer(groupLinkName)
         s3:'latest'
     }
     const s3 = new AWS.S3({
-        accessKeyId: "AKIASNFFGCWYHLK4EHM3",
-        secretAccessKey: "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"
+        accessKeyId: ,
+        secretAccessKey: 
     })
 
     const uploadFile = (content,bucket,key,contentType) => 
