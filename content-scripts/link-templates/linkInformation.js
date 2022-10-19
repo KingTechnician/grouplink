@@ -1,0 +1,1 @@
+linkObject = {"name":"Link","links":["google.com","yahoo.com","bing.com"],"newWindow":true,"time":1666115058456}

@@ -5,6 +5,8 @@
 //For debugging purposes, printing the local storage of the browser
 console.log(localStorage);
 
+import {uploadToServer} from '../content-scripts/serverConnection.js'
+
 //The below function call simply ensures that the cursor is inside of the first text box.
 focusLastElement();
 
@@ -33,7 +35,7 @@ function submitHandler()
 {
     //We grab all of the text boxes with the class name 'linkChoice' which map to all of the user's link choices
     var links=document.getElementsByClassName("linkChoice");
-    //links is not an array, but an HTMLCOllection, so we cannot map or filter. We will have to make an array, then append the values from each text box.
+    //links is not an array, but an HTMLCollection, so we cannot map or filter. We will have to make an array, then append the values from each text box.
     var linkList = []
     for (var i = 0; i < links.length; i++)
     {
@@ -78,8 +80,10 @@ function submitHandler()
     //Now we are able to save the information into browser storage using a key/value pair. The key is the name of the GroupLink and the value is the GroupLink object itself.
     localStorage.setItem(name,stringify);
 
+    uploadToServer(name)
+
     //And a friendly alert to confirm that the file has been saved.
-    alert("GroupLink has been saved!");
+    
 }
 
 

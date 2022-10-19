@@ -1,0 +1,28 @@
+<style>
+body
+{
+    background-image: linear-gradient(rgb(112,61,214), rgb(188,196,255));
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    color: white;
+    text-align:center;
+}
+a
+{
+    color:white;
+}
+</style>
+<head>
+    <title>Your Group Links</title>
+</head>
+<body>
+    <script src='linkInformation.js'></script>
+    <h1>Here are your Group Links!</h1>
+    <p>If the links do not show, try enabling popups in your browser settings.</p>
+    <div id="groupLinks">
+        <h2>Links Connected to This GroupLink:</h2>
+    </div>
+    <button id="activateButton" style="display:none;"></button>
+    <script src='open.js'></script>
+    <script>document.getElementById("activateButton").click();</script>
+</body>
