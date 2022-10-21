@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: #d7ccc8;
+}
+.form-container{
+    height: 600px;
+    width: 600px;
+    margin: 50px auto;
+}
+.form-container form{
+    height: 400px;
+    width: 500px;
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    background-image: conic-gradient(from -45deg, pink,purple);
+    padding: 30px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    color: white;
+
+
+}
+
+.form-container form h3{
+    text-align: center;
+    font-size: 2.5rem;
+    color: purple;
+}
