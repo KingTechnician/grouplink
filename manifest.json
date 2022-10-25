@@ -14,7 +14,8 @@
             "js":
             [
                 "content-scripts/savedLinks.js",
-                "content-scripts/addLink.js"
+                "content-scripts/addLink.js",
+                "content-scripts/menu.js"
             ]
         }
     ],
