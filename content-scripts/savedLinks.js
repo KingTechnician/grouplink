@@ -4,7 +4,7 @@
 
 
 //Grabbing the div from the view.html file
-grabDiv = document.getElementById("savedLinks");
+grabDiv = document.getElementById("links");
 
 //Grabbing all keys from the local browser storage.
 var keys = Object.keys(localStorage);
