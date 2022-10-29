@@ -1,6 +1,6 @@
 import {uploadToServer} from '../content-scripts/serverConnection.js'
 
-var menuArray = ["linkMenu","links"]
+var menuArray = ["linkMenu","links","profile"]
 
 function focusLastElement()
 {
@@ -24,6 +24,8 @@ var createLinkButton = document.getElementById("createLink")
 var plusButton = document.getElementsByClassName("plusButton")[0]
 
 plusButton.addEventListener("click",addLink)
+
+
 
 function addLink()
 {
@@ -56,6 +58,10 @@ createLinkButton.addEventListener("click",function(){setActive("linkMenu")})
 var createSaveButton = document.getElementById("savedLinks")
 
 createSaveButton.addEventListener("click",function(){setActive("links")})
+
+var profileButton = document.getElementById("profile")
+
+profileButton.addEventListener("click",function(){setActive("profile")})
 
 
 //This below function works by grabbing the links that were entered and saving them into the local browser storage.
@@ -113,4 +119,13 @@ function submitHandler()
     //And a friendly alert to confirm that the file has been saved.
     
 }
+
+//Function to be used later - at the moment, does not do anything important
+window.addEventListener("keydown",function()
+{
+    var desiredPass = document.getElementById("desiredPass")
+    var repeatPass=  document.getElemenyById("repeatPass")
+    console.log(desiredPass.value)
+    console.log(repeatPass.value)
+})
 

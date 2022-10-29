@@ -9,7 +9,7 @@ export function uploadToServer(groupLinkName)
         s3:'latest'
     }
     const s3 = new AWS.S3({
-        accessKeyId: ,
+        accessKeyId:,
         secretAccessKey: 
     })
 
