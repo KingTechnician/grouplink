@@ -4,7 +4,7 @@
     box-sizing: content-box;
 }
 body{
-    background-color: #d7ccc8;
+    background-color: #e1b4f9;
 }
 .form-container{
     height: 600px;
@@ -17,7 +17,7 @@ body{
     margin:  auto;
     display: flex;
     flex-direction: column;
-    background-image: conic-gradient(from -45deg, pink,purple);
+    background-image: conic-gradient(from -45deg, #c085d6,#c085d6);
     padding: 30px;
     text-transform: capitalize;
     border-radius: 30px;
