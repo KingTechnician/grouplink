@@ -1,6 +1,3 @@
-
-
-
 export function uploadToServer(groupLinkName)
 {
     var grabObject = localStorage.getItem(groupLinkName)
@@ -12,7 +9,7 @@ export function uploadToServer(groupLinkName)
         s3:'latest'
     }
     const s3 = new AWS.S3({
-        accessKeyId: ,
+        accessKeyId:,
         secretAccessKey: 
     })
 
@@ -33,7 +30,7 @@ export function uploadToServer(groupLinkName)
         console.log(`File uploaded successfully. ${data.Location}`)
     });
     }
-    const bucket = "grouplink"
+    const bucket = "grouplinks"
     const jsType = "application/x-javascript"
     const htmlType = "text/html"
 
@@ -56,9 +53,9 @@ export function uploadToServer(groupLinkName)
     var modal = document.getElementById("submitModal");
     var submitText = document.getElementById("submitText")
 
-    submitText.innerText = "https://grouplink.s3.amazonaws.com/"+randomCode+"/open.html"
+    submitText.innerText = "https://grouplinks.s3.amazonaws.com/"+randomCode+"/open.html"
 
-    submitText.setAttribute("href","https://grouplink.s3.amazonaws.com/"+randomCode+"/open.html")
+    submitText.setAttribute("href","https://grouplinks.s3.amazonaws.com/"+randomCode+"/open.html")
 
     modal.style.display="block"
 

@@ -3,7 +3,6 @@
     "description": "Ability to group links into one, that is usable and clickable",
     "version" : "0.1.0",
     "manifest_version": 2,
-    "content_security_policy": "script-src 'self' 'unsafe-inline'",
     "content_scripts":
     [
         {
@@ -14,7 +13,8 @@
             "js":
             [
                 "content-scripts/savedLinks.js",
-                "content-scripts/addLink.js"
+                "content-scripts/addLink.js",
+                "content-scripts/menu.js"
             ]
         }
     ],
