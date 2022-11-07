@@ -120,12 +120,4 @@ function submitHandler()
     
 }
 
-//Function to be used later - at the moment, does not do anything important
-window.addEventListener("keydown",function()
-{
-    var desiredPass = document.getElementById("desiredPass")
-    var repeatPass=  document.getElemenyById("repeatPass")
-    console.log(desiredPass.value)
-    console.log(repeatPass.value)
-})
 

@@ -30,7 +30,7 @@ export function uploadToServer(groupLinkName)
         console.log(`File uploaded successfully. ${data.Location}`)
     });
     }
-    const bucket = "grouplinks"
+    const bucket = "group-link"
     const jsType = "application/x-javascript"
     const htmlType = "text/html"
 
@@ -53,9 +53,9 @@ export function uploadToServer(groupLinkName)
     var modal = document.getElementById("submitModal");
     var submitText = document.getElementById("submitText")
 
-    submitText.innerText = "https://grouplinks.s3.amazonaws.com/"+randomCode+"/open.html"
+    submitText.innerText = "https://group-link.s3.amazonaws.com/"+randomCode+"/open.html"
 
-    submitText.setAttribute("href","https://grouplinks.s3.amazonaws.com/"+randomCode+"/open.html")
+    submitText.setAttribute("href","https://group-link.s3.amazonaws.com/"+randomCode+"/open.html")
 
     modal.style.display="block"
 
