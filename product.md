@@ -4,7 +4,7 @@
  - This plugin was made in mind for intuitive research, organized lesson plans, and convenience throughout the high school and college learning process
 
 ## At a Macro
-- One pge displats the menu (with Create Link, View Link and Profile tabs)
+- One page displays the menu (with Create Link, View Link and Profile tabs)
 - User can type a set of links, along with a title
 - Upon submission, two things will occur
     - The links will be saved in the cloud (through Amazon Web Services)
@@ -26,7 +26,7 @@
 
 ## What Would a Final Version Look Like
 - Our extension would have an added login function that allows people to store their links not only on the web, but also within the cloud
-    - Ideally, upon login, the Saved Links tab would populate with all of the links that they haved into their account
+    - Ideally, upon login, the Saved Links tab would populate with all of the links that they have in their account
 - An iOS version of our browser extension would have to be made in order to ensure compatibility with Apple devices and the Safari browser
 ## Team Process
 - Due to our conflicting schedules, the best way for us to work effective was an asynchronous work schedule
