@@ -35,7 +35,7 @@
     - This has proven to be a very benefiial process to allow us to work quickly, however we also feel there is an important component to working in-person that we missed
     
 ## Meeting Maps (in order by most recent)
-- [November 5, 2022 Meeting](]https://docs.google.com/document/d/1mYsUUzdZz8kFp3ocym8p5rJy2kLK7j3B8DklblaVp5M/edit?usp=sharing)
+- [November 5, 2022 Meeting](https://docs.google.com/document/d/1mYsUUzdZz8kFp3ocym8p5rJy2kLK7j3B8DklblaVp5M/edit?usp=sharing)
 - [October 29, 2022 Meeting](https://docs.google.com/document/d/1FbWqRPMC7xg6xOdLyaL5-Kv-Xyr6lbJBcluw1x4fCew/edit?usp=sharing)
 - [October 22, 2022 Meeting](https://docs.google.com/document/d/1ytgjqb4m2elnFon4_074mzvkP7-WL5CaJx6C1VzPfeY/edit?usp=sharing)
 - [October 15, 2022 Meeting](https://docs.google.com/document/d/1rqcOS9SmHntdr8xzePH7G35vYa3rLLMBlgE9DAQWA24/edit?usp=sharing)
