@@ -8,10 +8,16 @@ export function uploadToServer(groupLinkName)
     AWS.config.apiVersions = {
         s3:'latest'
     }
-    const s3 = new AWS.S3({
-        accessKeyId:,
-        secretAccessKey: 
-    })
+
+
+    AWS.config.accessKeyId = ""
+    AWS.config.secretAccessKey = ""
+
+    AWS.config.region = "us-east-1"
+
+    const ep = new AWS.Endpoint('s3.wasabisys.com')
+
+    const s3 = new AWS.S3({endpoint:ep})
 
     const uploadFile = (content,bucket,key,contentType) => 
     {
@@ -30,7 +36,7 @@ export function uploadToServer(groupLinkName)
         console.log(`File uploaded successfully. ${data.Location}`)
     });
     }
-    const bucket = "group-link"
+    const bucket = "grouplink"
     const jsType = "application/x-javascript"
     const htmlType = "text/html"
 
@@ -53,9 +59,9 @@ export function uploadToServer(groupLinkName)
     var modal = document.getElementById("submitModal");
     var submitText = document.getElementById("submitText")
 
-    submitText.innerText = "https://group-link.s3.amazonaws.com/"+randomCode+"/open.html"
+    submitText.innerText = "https://s3.us-east-1.wasabisys.com/grouplink/"+randomCode+"/open.html"
 
-    submitText.setAttribute("href","https://group-link.s3.amazonaws.com/"+randomCode+"/open.html")
+    submitText.setAttribute("href","https://s3.us-east-1.wasabisys.com/grouplink/"+randomCode+"/open.html")
 
     modal.style.display="block"
 
